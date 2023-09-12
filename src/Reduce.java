@@ -1,18 +1,17 @@
 public class Reduce {
-    public static void main(String[] args) {
-        int num = 100;
+    public static int main(int n) {
         int stepsCount = 0;
 
-        while (num > 0) {
-            if (num % 2 == 0) {
-                num /= 2;
+        while (n > 0) {
+            if (n % 2 == 0) {
+                n /= 2;
             } else {
-                num -= 1;
+                n -= 1;
             }
 
             stepsCount++;
         }
 
-        System.out.println(stepsCount);
+        return stepsCount;
     }
 }
